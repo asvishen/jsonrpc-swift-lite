@@ -10,6 +10,8 @@
 		C199CC501CBA0F3300772026 /* JSONRPCLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C199CC4F1CBA0F3300772026 /* JSONRPCLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C199CC571CBA0F3300772026 /* JSONRPCLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C199CC4C1CBA0F3300772026 /* JSONRPCLite.framework */; };
 		C199CC5C1CBA0F3300772026 /* JSONRPCLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CC5B1CBA0F3300772026 /* JSONRPCLiteTests.swift */; };
+		C199CC671CBA101C00772026 /* AbstractClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CC661CBA101C00772026 /* AbstractClient.swift */; };
+		C199CC691CBA11B000772026 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CC681CBA11B000772026 /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		C199CC561CBA0F3300772026 /* JSONRPCLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONRPCLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C199CC5B1CBA0F3300772026 /* JSONRPCLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRPCLiteTests.swift; sourceTree = "<group>"; };
 		C199CC5D1CBA0F3300772026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C199CC661CBA101C00772026 /* AbstractClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractClient.swift; sourceTree = "<group>"; };
+		C199CC681CBA11B000772026 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				C199CC4F1CBA0F3300772026 /* JSONRPCLite.h */,
 				C199CC511CBA0F3300772026 /* Info.plist */,
+				C199CC661CBA101C00772026 /* AbstractClient.swift */,
+				C199CC681CBA11B000772026 /* HttpClient.swift */,
 			);
 			path = JSONRPCLite;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C199CC691CBA11B000772026 /* HttpClient.swift in Sources */,
+				C199CC671CBA101C00772026 /* AbstractClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +318,9 @@
 		C199CC611CBA0F3300772026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -319,13 +330,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.msse.avishen.JSONRPCLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C199CC621CBA0F3300772026 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -335,6 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.msse.avishen.JSONRPCLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
