@@ -12,6 +12,7 @@
 		C199CC5C1CBA0F3300772026 /* JSONRPCLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CC5B1CBA0F3300772026 /* JSONRPCLiteTests.swift */; };
 		C199CC671CBA101C00772026 /* AbstractClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CC661CBA101C00772026 /* AbstractClient.swift */; };
 		C199CC691CBA11B000772026 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CC681CBA11B000772026 /* HttpClient.swift */; };
+		E481D1661CDDC8AE00D50E4B /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481D1651CDDC8AE00D50E4B /* TCPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		C199CC5D1CBA0F3300772026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C199CC661CBA101C00772026 /* AbstractClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractClient.swift; sourceTree = "<group>"; };
 		C199CC681CBA11B000772026 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		E481D1651CDDC8AE00D50E4B /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				C199CC511CBA0F3300772026 /* Info.plist */,
 				C199CC661CBA101C00772026 /* AbstractClient.swift */,
 				C199CC681CBA11B000772026 /* HttpClient.swift */,
+				E481D1651CDDC8AE00D50E4B /* TCPClient.swift */,
 			);
 			path = JSONRPCLite;
 			sourceTree = "<group>";
@@ -154,7 +157,7 @@
 				TargetAttributes = {
 					C199CC4B1CBA0F3300772026 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = R7486867KT;
+						DevelopmentTeam = 99J8PHL6MY;
 					};
 					C199CC551CBA0F3300772026 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -204,6 +207,7 @@
 			files = (
 				C199CC691CBA11B000772026 /* HttpClient.swift in Sources */,
 				C199CC671CBA101C00772026 /* AbstractClient.swift in Sources */,
+				E481D1661CDDC8AE00D50E4B /* TCPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +399,7 @@
 				C199CC621CBA0F3300772026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C199CC631CBA0F3300772026 /* Build configuration list for PBXNativeTarget "JSONRPCLiteTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				C199CC651CBA0F3300772026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
